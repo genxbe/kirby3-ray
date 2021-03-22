@@ -4,7 +4,7 @@ Helper tool that enables ray on all the extendable methods.
 
 Ray is the fantastic dump debugger from our friends at Spatie. You can find more information about Ray on https://myray.app/.
 
-<img src="https://static.gnx.cloud/genx/kirby/kirby3-ray-2.gif">
+<img src="https://static.gnx.cloud/genx/kirby/kirby3-ray-loop.gif">
 
 ## Options
 
