@@ -13,11 +13,11 @@ By default the ray helper won’t be enabled, you can enable it by setting `debu
 ```php
 # site/config/config.php
 return [
-    'debug' => true,
+  'debug' => true,
 
-    // OR //
+  // OR //
 
-	'genxbe.ray.enabled' => true,
+  'genxbe.ray.enabled' => true,
 ];
 ```
 
@@ -31,13 +31,13 @@ Pass a color as parameter if you want to enable color filtering in ray.
 ```php
 <?php
   // Parse page in ray
-	$myField = $page->ray()->myField();
+  $myField = $page->ray()->myField();
 
-	// Parse page in ray with the blue color filter active
-	$myTitle = $page->ray('blue')->myTitle();
+  // Parse page in ray with the blue color filter active
+  $myTitle = $page->ray('blue')->myTitle();
 
   // Parse the page and the field in ray
-	$projects = $page->ray()->projects()->ray();
+  $projects = $page->ray()->projects()->ray();
 ?>
 
 <?= $site->seoOgImage()->ray() ?>
