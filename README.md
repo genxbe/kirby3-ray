@@ -11,7 +11,7 @@ By default the ray helper won’t be enabled, you can enable it by adding the `e
 ```php
 # site/config/config.php
 return [
-	'genx.ray.enabled’ => true,
+	'genxbe.ray.enabled’ => true,
 ];
 ```
 
