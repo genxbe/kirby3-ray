@@ -1,6 +1,6 @@
 # Kirby3 Ray helper
 
-Helper tool that enables ray on all the extendable methods.
+Helper tool that enables ray on all extendable methods.
 
 Ray is the fantastic dump debugger from our friends at Spatie. You can find more information about Ray on https://myray.app/.
 
