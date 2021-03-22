@@ -6,12 +6,16 @@ Ray is the fantastic dump debugger from our friends at Spatie. You can find more
 
 ## Options
 
-By default the ray helper won’t be enabled, you can enable it by adding the `enabled` option.
+By default the ray helper won’t be enabled, you can enable it by setting `debug` to `true` or by adding the `enabled` option in the config file.
 
 ```php
 # site/config/config.php
 return [
-	'genxbe.ray.enabled’ => true,
+    'debug' => true,
+
+    // OR //
+
+	'genxbe.ray.enabled' => true,
 ];
 ```
 

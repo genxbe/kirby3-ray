@@ -8,7 +8,7 @@ class Ray
 
     public static function ray($obj, string $color = null)
     {
-        if(function_exists('ray') && self::option('enabled'))
+        if(function_exists('ray') && (self::option('enabled') || self::option('debug')))
         {
             if(!empty($color))
             {
@@ -33,6 +33,7 @@ class Ray
         if(empty(self::$options))
         {
             self::$options = [
+                'debug' => option('debug', false),
                 'enabled' => option('genxbe.ray.enabled', false),
             ];
         }
