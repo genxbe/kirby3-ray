@@ -4,6 +4,8 @@ Helper tool that enables ray on all the extendable methods.
 
 Ray is the fantastic dump debugger from our friends at Spatie. You can find more information about Ray on https://myray.app/.
 
+<img src="https://static.gnx.cloud/genx/kirby/kirby3-ray.gif">
+
 ## Options
 
 By default the ray helper won’t be enabled, you can enable it by setting `debug` to `true` or by adding the `enabled` option in the config file.
