@@ -19,5 +19,6 @@ return array(
     'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
     'Ramsey\\Collection\\' => array($vendorDir . '/ramsey/collection/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Kirby\\' => array($vendorDir . '/getkirby/composer-installer/src'),
     'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
 );

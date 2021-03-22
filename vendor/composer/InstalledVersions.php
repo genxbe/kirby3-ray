@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '65a9977ade21b56a9b1a4880f4b59e9419a06300',
+    'reference' => '2700712927128e7583d3d9120c842d16eb517e44',
     'name' => 'genxbe/kirby3-ray',
   ),
   'versions' => 
@@ -51,7 +51,16 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '65a9977ade21b56a9b1a4880f4b59e9419a06300',
+      'reference' => '2700712927128e7583d3d9120c842d16eb517e44',
+    ),
+    'getkirby/composer-installer' => 
+    array (
+      'pretty_version' => '1.2.1',
+      'version' => '1.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c98ece30bfba45be7ce457e1102d1b169d922f3d',
     ),
     'psr/container' => 
     array (
