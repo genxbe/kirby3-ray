@@ -31,7 +31,7 @@ private static $installed = array (
     array (
     ),
     'reference' => NULL,
-    'name' => 'genxbe/kirby-ray',
+    'name' => 'genxbe/kirby3-ray',
   ),
   'versions' => 
   array (
@@ -44,7 +44,7 @@ private static $installed = array (
       ),
       'reference' => 'dff976c2f3487d42c1db75a3b180e2b9f0e72ce0',
     ),
-    'genxbe/kirby-ray' => 
+    'genxbe/kirby3-ray' => 
     array (
       'pretty_version' => '1.0.0',
       'version' => '1.0.0.0',
