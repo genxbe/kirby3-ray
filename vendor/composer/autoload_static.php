@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit17669307aed63732e0d3abfa89885277
+class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
 {
     public static $files = array (
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
@@ -40,10 +40,6 @@ class ComposerStaticInit17669307aed63732e0d3abfa89885277
         'P' => 
         array (
             'Psr\\Container\\' => 14,
-        ),
-        'K' => 
-        array (
-            'Kirby\\' => 6,
         ),
         'B' => 
         array (
@@ -104,10 +100,6 @@ class ComposerStaticInit17669307aed63732e0d3abfa89885277
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Kirby\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
-        ),
         'Brick\\Math\\' => 
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
@@ -132,10 +124,6 @@ class ComposerStaticInit17669307aed63732e0d3abfa89885277
         'Brick\\Math\\Internal\\Calculator\\NativeCalculator' => __DIR__ . '/..' . '/brick/math/src/Internal/Calculator/NativeCalculator.php',
         'Brick\\Math\\RoundingMode' => __DIR__ . '/..' . '/brick/math/src/RoundingMode.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Kirby\\ComposerInstaller\\CmsInstaller' => __DIR__ . '/..' . '/getkirby/composer-installer/src/ComposerInstaller/CmsInstaller.php',
-        'Kirby\\ComposerInstaller\\Installer' => __DIR__ . '/..' . '/getkirby/composer-installer/src/ComposerInstaller/Installer.php',
-        'Kirby\\ComposerInstaller\\Plugin' => __DIR__ . '/..' . '/getkirby/composer-installer/src/ComposerInstaller/Plugin.php',
-        'Kirby\\ComposerInstaller\\PluginInstaller' => __DIR__ . '/..' . '/getkirby/composer-installer/src/ComposerInstaller/PluginInstaller.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
@@ -405,9 +393,9 @@ class ComposerStaticInit17669307aed63732e0d3abfa89885277
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit17669307aed63732e0d3abfa89885277::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit17669307aed63732e0d3abfa89885277::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit17669307aed63732e0d3abfa89885277::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -33,12 +33,11 @@ class Ray
         if(empty(self::$options))
         {
             self::$options = [
-                'enabled' => option('genx.ray.enabled', false),
+                'enabled' => option('genxbe.ray.enabled', false),
             ];
         }
 
         if ($key) {
-            var_dump(self::$options);
             return \A::get(self::$options, $key);
         }
 
