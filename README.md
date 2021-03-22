@@ -2,7 +2,7 @@
 
 Helper tool that enables ray on all the extendable methods.
 
-Ray is the fantastic dump debugger from our friends at Spatie. You can find more information about Ray on [https://myray.app/]
+Ray is the fantastic dump debugger from our friends at Spatie. You can find more information about Ray on https://myray.app/.
 
 ## Options
 
@@ -11,7 +11,7 @@ By default the ray helper won’t be enabled, you can enable it by adding the `e
 ```php
 # site/config/config.php
 return [
-	'genxbe.ray.enabled’ => true,
+	'genx.ray.enabled’ => true,
 ];
 ```
 
