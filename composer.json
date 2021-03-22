@@ -1,0 +1,25 @@
+{
+    "name": "genxbe/kirby-ray",
+    "type": "kirby-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Helper tool that enables ray on all the extendable methods.",
+    "authors": [
+        {
+            "name": "Sam Serrien",
+            "email": "source@genx.be"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1",
+        "spatie/ray": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "X\\": "classes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
