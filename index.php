@@ -52,3 +52,7 @@ Kirby::plugin('genxbe/ray', [
 		},
 	],
 ]);
+
+if (function_exists('ray') && (!option('debug') && !option('genxbe.ray.enabled'))) {
+    ray()->disable();
+}
