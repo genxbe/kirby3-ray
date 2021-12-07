@@ -51,6 +51,11 @@ Kirby::plugin('genxbe/ray', [
             return X\Ray::ray($this, $color);
 		},
 	],
+    'hooks' => [
+        'system.exception' => function ($exception) {
+            ray()->exception($exception);
+        },
+    ],
 ]);
 
 if (function_exists('ray') && (!option('debug') && !option('genxbe.ray.enabled'))) {
