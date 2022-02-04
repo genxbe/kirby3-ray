@@ -4,6 +4,7 @@ namespace Spatie\Ray;
 
 use Exception;
 use Spatie\Ray\Exceptions\StopExecutionRequested;
+use Spatie\Ray\Origin\Hostname;
 
 class Client
 {
@@ -56,7 +57,7 @@ class Client
         } finally {
             curl_close($curlHandle);
 
-            return $success;
+            return $success ?? false;
         }
     }
 
@@ -92,7 +93,12 @@ class Client
             return false;
         }
 
-        $curlHandle = $this->getCurlHandleForUrl('get', "locks/{$lockName}");
+        $queryString = http_build_query([
+            'hostname' => Hostname::get(),
+            'project_name' => Ray::$projectName,
+        ]);
+
+        $curlHandle = $this->getCurlHandleForUrl('get', "locks/{$lockName}?{$queryString}");
         $curlError = null;
 
         try {
@@ -103,7 +109,7 @@ class Client
             }
 
             if ($curlError) {
-                throw new Exception;
+                throw new Exception();
             }
 
             if (! $curlResult) {

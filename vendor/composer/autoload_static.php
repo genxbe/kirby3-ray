@@ -4,13 +4,14 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
+class ComposerStaticInit66f4a9c093dfbd6e404a9039967eb044
 {
     public static $files = array (
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '3074abeef0bacf5811f59e9dee6311d1' => __DIR__ . '/..' . '/spatie/ray/src/helpers.php',
     );
@@ -22,6 +23,7 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php81\\' => 23,
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
@@ -55,6 +57,10 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'X\\' => 
         array (
             0 => __DIR__ . '/../..' . '/classes',
+        ),
+        'Symfony\\Polyfill\\Php81\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php81',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -204,6 +210,7 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'Ramsey\\Uuid\\Exception\\TimeSourceException' => __DIR__ . '/..' . '/ramsey/uuid/src/Exception/TimeSourceException.php',
         'Ramsey\\Uuid\\Exception\\UnableToBuildUuidException' => __DIR__ . '/..' . '/ramsey/uuid/src/Exception/UnableToBuildUuidException.php',
         'Ramsey\\Uuid\\Exception\\UnsupportedOperationException' => __DIR__ . '/..' . '/ramsey/uuid/src/Exception/UnsupportedOperationException.php',
+        'Ramsey\\Uuid\\Exception\\UuidExceptionInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Exception/UuidExceptionInterface.php',
         'Ramsey\\Uuid\\FeatureSet' => __DIR__ . '/..' . '/ramsey/uuid/src/FeatureSet.php',
         'Ramsey\\Uuid\\Fields\\FieldsInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Fields/FieldsInterface.php',
         'Ramsey\\Uuid\\Fields\\SerializableFieldsTrait' => __DIR__ . '/..' . '/ramsey/uuid/src/Fields/SerializableFieldsTrait.php',
@@ -271,6 +278,7 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
+        'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
         'Spatie\\Backtrace\\Backtrace' => __DIR__ . '/..' . '/spatie/backtrace/src/Backtrace.php',
         'Spatie\\Backtrace\\CodeSnippet' => __DIR__ . '/..' . '/spatie/backtrace/src/CodeSnippet.php',
         'Spatie\\Backtrace\\File' => __DIR__ . '/..' . '/spatie/backtrace/src/File.php',
@@ -279,6 +287,7 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'Spatie\\Ray\\ArgumentConverter' => __DIR__ . '/..' . '/spatie/ray/src/ArgumentConverter.php',
         'Spatie\\Ray\\Client' => __DIR__ . '/..' . '/spatie/ray/src/Client.php',
         'Spatie\\Ray\\Concerns\\RayColors' => __DIR__ . '/..' . '/spatie/ray/src/Concerns/RayColors.php',
+        'Spatie\\Ray\\Concerns\\RayScreenColors' => __DIR__ . '/..' . '/spatie/ray/src/Concerns/RayScreenColors.php',
         'Spatie\\Ray\\Concerns\\RaySizes' => __DIR__ . '/..' . '/spatie/ray/src/Concerns/RaySizes.php',
         'Spatie\\Ray\\Concerns\\RemovesRayFrames' => __DIR__ . '/..' . '/spatie/ray/src/Concerns/RemovesRayFrames.php',
         'Spatie\\Ray\\Exceptions\\CouldNotConnectToRay' => __DIR__ . '/..' . '/spatie/ray/src/Exceptions/CouldNotConnectToRay.php',
@@ -304,23 +313,35 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'Spatie\\Ray\\Payloads\\HtmlPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/HtmlPayload.php',
         'Spatie\\Ray\\Payloads\\ImagePayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/ImagePayload.php',
         'Spatie\\Ray\\Payloads\\JsonStringPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/JsonStringPayload.php',
+        'Spatie\\Ray\\Payloads\\LabelPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/LabelPayload.php',
         'Spatie\\Ray\\Payloads\\LogPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/LogPayload.php',
         'Spatie\\Ray\\Payloads\\MeasurePayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/MeasurePayload.php',
         'Spatie\\Ray\\Payloads\\NewScreenPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/NewScreenPayload.php',
         'Spatie\\Ray\\Payloads\\NotifyPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/NotifyPayload.php',
         'Spatie\\Ray\\Payloads\\NullPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/NullPayload.php',
         'Spatie\\Ray\\Payloads\\Payload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/Payload.php',
+        'Spatie\\Ray\\Payloads\\PhpInfoPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/PhpInfoPayload.php',
         'Spatie\\Ray\\Payloads\\RemovePayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/RemovePayload.php',
+        'Spatie\\Ray\\Payloads\\ScreenColorPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/ScreenColorPayload.php',
+        'Spatie\\Ray\\Payloads\\SeparatorPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/SeparatorPayload.php',
         'Spatie\\Ray\\Payloads\\ShowAppPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/ShowAppPayload.php',
         'Spatie\\Ray\\Payloads\\SizePayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/SizePayload.php',
         'Spatie\\Ray\\Payloads\\TablePayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/TablePayload.php',
+        'Spatie\\Ray\\Payloads\\TextPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/TextPayload.php',
         'Spatie\\Ray\\Payloads\\TracePayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/TracePayload.php',
         'Spatie\\Ray\\Payloads\\XmlPayload' => __DIR__ . '/..' . '/spatie/ray/src/Payloads/XmlPayload.php',
         'Spatie\\Ray\\Ray' => __DIR__ . '/..' . '/spatie/ray/src/Ray.php',
         'Spatie\\Ray\\Request' => __DIR__ . '/..' . '/spatie/ray/src/Request.php',
         'Spatie\\Ray\\Settings\\Settings' => __DIR__ . '/..' . '/spatie/ray/src/Settings/Settings.php',
         'Spatie\\Ray\\Settings\\SettingsFactory' => __DIR__ . '/..' . '/spatie/ray/src/Settings/SettingsFactory.php',
+        'Spatie\\Ray\\Support\\CacheStore' => __DIR__ . '/..' . '/spatie/ray/src/Support/CacheStore.php',
+        'Spatie\\Ray\\Support\\Clock' => __DIR__ . '/..' . '/spatie/ray/src/Support/Clock.php',
         'Spatie\\Ray\\Support\\Counters' => __DIR__ . '/..' . '/spatie/ray/src/Support/Counters.php',
+        'Spatie\\Ray\\Support\\ExceptionHandler' => __DIR__ . '/..' . '/spatie/ray/src/Support/ExceptionHandler.php',
+        'Spatie\\Ray\\Support\\IgnoredValue' => __DIR__ . '/..' . '/spatie/ray/src/Support/IgnoredValue.php',
+        'Spatie\\Ray\\Support\\Limiters' => __DIR__ . '/..' . '/spatie/ray/src/Support/Limiters.php',
+        'Spatie\\Ray\\Support\\RateLimiter' => __DIR__ . '/..' . '/spatie/ray/src/Support/RateLimiter.php',
+        'Spatie\\Ray\\Support\\SystemClock' => __DIR__ . '/..' . '/spatie/ray/src/Support/SystemClock.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Stopwatch\\Section' => __DIR__ . '/..' . '/symfony/stopwatch/Section.php',
         'Symfony\\Component\\Stopwatch\\Stopwatch' => __DIR__ . '/..' . '/symfony/stopwatch/Stopwatch.php',
@@ -340,6 +361,7 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'Symfony\\Component\\VarDumper\\Caster\\DsPairStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/DsPairStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\EnumStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/EnumStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\ExceptionCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ExceptionCaster.php',
+        'Symfony\\Component\\VarDumper\\Caster\\FiberCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/FiberCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\FrameStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/FrameStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\GmpCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/GmpCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\ImagineCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ImagineCaster.php',
@@ -388,6 +410,7 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'Symfony\\Component\\VarDumper\\Test\\VarDumperTestTrait' => __DIR__ . '/..' . '/symfony/var-dumper/Test/VarDumperTestTrait.php',
         'Symfony\\Component\\VarDumper\\VarDumper' => __DIR__ . '/..' . '/symfony/var-dumper/VarDumper.php',
         'Symfony\\Contracts\\Service\\Attribute\\Required' => __DIR__ . '/..' . '/symfony/service-contracts/Attribute/Required.php',
+        'Symfony\\Contracts\\Service\\Attribute\\SubscribedService' => __DIR__ . '/..' . '/symfony/service-contracts/Attribute/SubscribedService.php',
         'Symfony\\Contracts\\Service\\ResetInterface' => __DIR__ . '/..' . '/symfony/service-contracts/ResetInterface.php',
         'Symfony\\Contracts\\Service\\ServiceLocatorTrait' => __DIR__ . '/..' . '/symfony/service-contracts/ServiceLocatorTrait.php',
         'Symfony\\Contracts\\Service\\ServiceProviderInterface' => __DIR__ . '/..' . '/symfony/service-contracts/ServiceProviderInterface.php',
@@ -397,6 +420,7 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
+        'Symfony\\Polyfill\\Php81\\Php81' => __DIR__ . '/..' . '/symfony/polyfill-php81/Php81.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'X\\Ray' => __DIR__ . '/../..' . '/classes/Ray.php',
@@ -405,9 +429,9 @@ class ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit4d8297e45abcf2e0ce28b4e286146849::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit66f4a9c093dfbd6e404a9039967eb044::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit66f4a9c093dfbd6e404a9039967eb044::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit66f4a9c093dfbd6e404a9039967eb044::$classMap;
 
         }, null, ClassLoader::class);
     }
