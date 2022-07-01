@@ -6,6 +6,14 @@ Ray is the fantastic dump debugger from our friends at Spatie. You can find more
 
 <img src="https://static.gnx.cloud/genx/kirby/kirby3-ray-loop.gif">
 
+## Important note for Kirby > 3.7
+
+This plugin overrides the `dump` helper from Kirby core. Please put the following at the top of your `index.php`.
+
+```php
+define('KIRBY_HELPER_DUMP', false);
+```
+
 ## Options
 
 By default the ray helper won’t be enabled, you can enable it by setting `debug` to `true` or by adding the `enabled` option in the config file.
