@@ -2,7 +2,7 @@
 
 @include_once __DIR__ . '/vendor/autoload.php';
 
-Kirby::plugin('genxbe/kirby3-ray', [
+Kirby::plugin('genxbe/ray', [
     'options' => [
 		'enabled' => false,
 	],
