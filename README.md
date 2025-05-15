@@ -6,7 +6,7 @@ Ray is the fantastic dump debugger from our friends at Spatie. You can find more
 
 <img src="https://static.gnx.cloud/genx/kirby/kirby3-ray-loop.gif">
 
-## Important note for Kirby > 3.7
+## Important note for Kirby > 3.7 < 5.0
 
 This plugin overrides the `dump` helper from Kirby core. Please put the following at the top of your `index.php`.
 
