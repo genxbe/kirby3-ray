@@ -1,4 +1,4 @@
-# Kirby3 Ray helper
+# Kirby Ray helper
 
 Helper tool that enables ray on all extendable methods.
 
@@ -59,18 +59,18 @@ Pass a color as parameter if you want to enable color filtering in ray.
 
 ### Download
 
-Download and copy this repository to `/site/plugins/kirby3-ray`.
+Download and copy this repository to `/site/plugins/kirby-ray`.
 
 ### Git submodule
 
 ```
-git submodule add https://github.com/genxbe/kirby3-ray.git site/plugins/kirby3-ray
+git submodule add https://github.com/genxbe/kirby-ray.git site/plugins/kirby-ray
 ```
 
 ### Composer
 
 ```
-composer require genxbe/kirby3-ray
+composer require genxbe/kirby-ray
 ```
 
 ## License
