@@ -4,6 +4,14 @@
     "license": "MIT",
     "version": "2.0.2",
     "description": "Helper tool that enables ray on all the extendable methods.",
+    "keywords": [
+        "genxbe",
+        "kirby",
+        "kirby4",
+        "kirby5",
+        "plugin",
+        "getkirby"
+    ],
     "authors": [
         {
             "name": "Sam Serrien",
