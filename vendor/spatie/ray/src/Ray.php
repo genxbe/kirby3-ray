@@ -107,14 +107,14 @@ class Ray
     /** @var Closure|null */
     public static $beforeSendRequest = null;
 
-    public static function create(Client $client = null, string $uuid = null): self
+    public static function create(?Client $client = null, ?string $uuid = null): self
     {
         $settings = SettingsFactory::createFromConfigFile();
 
         return new static($settings, $client, $uuid);
     }
 
-    public function __construct(Settings $settings, Client $client = null, string $uuid = null)
+    public function __construct(Settings $settings, ?Client $client = null, ?string $uuid = null)
     {
         $this->settings = $settings;
 
@@ -275,7 +275,7 @@ class Ray
         return $this->sendRequest($payload);
     }
 
-    public function trace(?Closure $startingFromFrame = null): self
+    public function trace(?Closure $startingFromFrame = null, ?int $offset = null, ?int $limit = null): self
     {
         $backtrace = Backtrace::create();
 
@@ -287,14 +287,22 @@ class Ray
             $backtrace->startingFromFrame($startingFromFrame);
         }
 
+        if ($offset) {
+            $backtrace->offset($offset);
+        }
+
+        if ($limit) {
+            $backtrace->limit($limit);
+        }
+
         $payload = new TracePayload($backtrace->frames());
 
         return $this->sendRequest($payload);
     }
 
-    public function backtrace(?Closure $startingFromFrame = null): self
+    public function backtrace(?Closure $startingFromFrame = null, ?int $offset = null, ?int $limit = null): self
     {
-        return $this->trace($startingFromFrame);
+        return $this->trace($startingFromFrame, $offset, $limit);
     }
 
     public function caller(): self

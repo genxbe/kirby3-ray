@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Backtrace;
+namespace Spatie\Backtrace\CodeSnippets;
 
 use SplFileObject;
 
-class File
+class FileSnippetProvider implements SnippetProvider
 {
     /** @var \SplFileObject */
     protected $file;
@@ -21,7 +21,7 @@ class File
         return $this->file->key() + 1;
     }
 
-    public function getLine(int $lineNumber = null): string
+    public function getLine(?int $lineNumber = null): string
     {
         if (is_null($lineNumber)) {
             return $this->getNextLine();

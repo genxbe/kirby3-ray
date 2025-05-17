@@ -23,7 +23,7 @@ class_exists(Section::class);
  */
 class Stopwatch implements ResetInterface
 {
-    private bool $morePrecision;
+    public const ROOT = '__root__';
 
     /**
      * @var Section[]
@@ -38,9 +38,9 @@ class Stopwatch implements ResetInterface
     /**
      * @param bool $morePrecision If true, time is stored as float to keep the original microsecond precision
      */
-    public function __construct(bool $morePrecision = false)
-    {
-        $this->morePrecision = $morePrecision;
+    public function __construct(
+        private bool $morePrecision = false,
+    ) {
         $this->reset();
     }
 
@@ -64,7 +64,7 @@ class Stopwatch implements ResetInterface
         $current = end($this->activeSections);
 
         if (null !== $id && null === $current->get($id)) {
-            throw new \LogicException(sprintf('The section "%s" has been started at an other level and cannot be opened.', $id));
+            throw new \LogicException(\sprintf('The section "%s" has been started at an other level and cannot be opened.', $id));
         }
 
         $this->start('__section__.child', 'section');
@@ -144,10 +144,20 @@ class Stopwatch implements ResetInterface
     }
 
     /**
+     * Gets all events for the root section.
+     *
+     * @return StopwatchEvent[]
+     */
+    public function getRootSectionEvents(): array
+    {
+        return $this->sections[self::ROOT]->getEvents() ?? [];
+    }
+
+    /**
      * Resets the stopwatch to its original state.
      */
     public function reset(): void
     {
-        $this->sections = $this->activeSections = ['__root__' => new Section(null, $this->morePrecision)];
+        $this->sections = $this->activeSections = [self::ROOT => new Section(null, $this->morePrecision)];
     }
 }
