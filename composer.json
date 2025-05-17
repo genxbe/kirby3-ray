@@ -1,38 +1,38 @@
 {
-    "name": "genxbe/kirby-ray",
-    "type": "kirby-plugin",
-    "license": "MIT",
-    "version": "2.0.2",
-    "description": "Helper tool that enables ray on all the extendable methods.",
-    "keywords": [
-        "genxbe",
-        "kirby",
-        "kirby4",
-        "kirby5",
-        "plugin",
-        "getkirby"
-    ],
-    "authors": [
-        {
-            "name": "Sam Serrien",
-            "email": "source@genx.be"
-        }
-    ],
-    "require": {
-        "php": "^8.0",
-        "getkirby/composer-installer": "^1.1",
-        "spatie/ray": "^1.3",
-        "spatie/macroable": "^2.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "X\\": "classes/"
-        }
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "allow-plugins": {
-            "getkirby/composer-installer": true
-        }
+  "name": "genxbe/kirby-ray",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "version": "2.0.3",
+  "description": "Helper tool that enables ray on all the extendable methods.",
+  "keywords": [
+    "genxbe",
+    "kirby",
+    "kirby4",
+    "kirby5",
+    "plugin",
+    "getkirby"
+  ],
+  "authors": [
+    {
+      "name": "Sam Serrien",
+      "email": "source@genx.be"
     }
+  ],
+  "require": {
+    "php": "^8.3",
+    "getkirby/composer-installer": "^1.1",
+    "spatie/ray": "^1.3",
+    "spatie/macroable": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "X\\": "classes/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  }
 }
